@@ -111,7 +111,7 @@ const apiResult = [{
             color:"Green",
             img:[
                 {title: "side-a", path:"../img/style3greenB.jpg"},
-                {title: "side-b", path:"../img/style3greenC.jpg"},
+                {title: "side-b", path:"../img/style3greenB.jpg"},
                 {title: "main", path:"../img/style3greenA.jpg"},]
         },
         {
