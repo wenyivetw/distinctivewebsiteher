@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    color: #E1E2E1;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFAB91;
+    border-bottom: 1px solid #FFAB91;
+    padding-bottom: 2px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+}
+
+header nav{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex: 1 1 30%;
+    height: 100px;
+   
+}
+
+header nav ul {
+    display: flex;
+    margin: 0;
+}
+header nav ul li {
+    list-style-type: none;
+    margin: 0 5px;
+    font-size: 14px;
+    
+}
+
+header nav ul li a {
+    color: black;
+}
+
+.nav-active {
+    color: #FFAB91;
+    border-bottom: 1px solid #FFAB91;
+    padding-bottom: 2px;
+}
+
+header .header-center{
+    flex: 1 1 30%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo {
+    width: 134px;
+}
+
+header .header-left{
+    flex: 1 1 30%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .header-left input {
+    height: 45px;
+    width: 274px;
+    background-color: #FFFFFF2E;
+    border: none;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+}
+
+header .header-left input::placeholder{
+    color: #black;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+
+.icon{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.container .highlight {
+margin-top: 10px;
+margin-bottom: 10px;
+ width: 100%;
+ background-color: #FFAB91;
+ padding: 5px;
+}
+.container .highlight span {
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #C97B63;
+  }
+
+.newArrivals {
+    margin-top: 50px;
+}
+.article-title {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+.footer {
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 100px;
+ color: #FFFFFF;
+ background-color: black;
+ padding-top: 20px;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin: 0 1vw;
+}
+
+footer  ul li .icons  {
+ display: flex;
+ justify-content: space-evenly;
+}
+
+footer .icon {
+  color:  #E1E2E1;
+} 
+
+footer .active-icon:hover {
+  color:  #FFAB91;
+} 
+
+.button {
+    background-color: #FFAB91;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .aboutus-information-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutusimg {
+    width:1037px;
+    height:692px;
+  }
+  p {
+    text-align: center;
+    padding-left:70px;
+    padding-right: 70px;
+  }
+    
+  h3 {
+    margin-top: 10px;
+    text-align: center;
+  }

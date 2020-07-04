@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Bikini website</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link type="text/css" href="../styles/standard.css" rel="stylesheet" />
+        <link type="text/css" href="../styles/collection.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../pages/swimwear.html">COLLECTIONS</a></li>
+                    <li><a href="../pages/aboutus.html">ABOUT US</a></li>
+                    <li><a href="#" class="nav-active">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="header-center">
+                <img src="../img/logo.png" alt="logo" class="logo" />
+            </div>
+            <div class="header-left">
+                <input type="text" placeholder="Search.." />
+                <a onclick="alert('Log in feature coming soon!')" class="icon" ><i class="fa fa-fw fa-user"></i></a>    
+                <a onclick="alert('Add to cart feature coming soon!')" class="icon"><i class="fa fa-shopping-bag"></i></a>
+            </div>
+        </header>
+        <div class="container">
+            <div style="text-align: center;">
+                <h2>Contact Us</h2>
+                <p>Swing by for a cup of coffee, or leave us a message:</p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="../img/contactus.jpg" style="width: 100%;" />
+                </div>
+                <div class="column">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height: 170px;"></textarea>
+                        <input type="submit" value="Submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <section>
+                <ul>
+                    <li><h4>Distinctive</h4></li>
+                    <li> <a href="aboutus.html">About us</a></li>
+                    <li> <a href="#" onclick="alert('Coming soon!')">Privacy policy</a></li>
+                    <li> <a href="#" onclick="alert('Coming soon!')">Terms of condition</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h4>Customer care</h4></li>
+                    <li> <a href="#" onclick="alert('Coming soon!')">Shipping information</a></li>
+                    <li> <a href="#" onclick="alert('Coming soon!')">Return and exchange</a></li>
+                    <li> <a href="#" onclick="alert('Coming soon!')">FAQ</a></li>
+                    <li> <a href="#" onclick="alert('Coming soon!')">Live chat</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h4>Stay connected</h4></li>
+                    <li class="icons">
+                        <a href="https://www.facebook.com/Distinctive-100470958402970/?modal=admin_todo_tour" class="icon active-icon"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/distinctive_swim/?hl=en" class="icon active-icon"><i class="fa fa-instagram"></i></a>
+                        <a href="#" onclick="alert('Coming soon!')" class="icon active-icon"><i class="fa fa-twitter"></i></a>
+                        <a href="#" onclick="alert('Coming soon!')" class="icon active-icon"><i class="fa fa-snapchat"></i></a>
+                        <a href="#" onclick="alert('Coming soon!')" class="icon active-icon"><i class="fa fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h4>Payment methods</h4></li>
+                    <li>
+                        <i class="fa fa-cc-paypal icon"></i>
+                        <i class="fa fa-cc-visa icon"></i>
+                        <i class="fa fa-cc-mastercard icon"></i>
+                    </li>
+                    </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><h4>Let's stay in touch</h4></li>
+                    <li>
+                       <button onclick="alert('Coming soon!')" class="button"> <strong>SIGN UP</strong></button>
+                    </li>
+                    </ul>
+            </section>
+        </footer>
+        <script src="../collections.js"></script>
+    </body>
+</html>
